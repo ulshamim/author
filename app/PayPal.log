@@ -1,0 +1,247 @@
+[15-01-2015 12:35:04] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[15-01-2015 12:35:04] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 12:35:04] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QVZHdTlCQ0RvTlAxaUhuUkRkaWtJQVRuZm1CZzFQMkdRTmZ2VzFYN25tQlE4OG82VFNMMmd3SjJaTHVSOkVHRVlpQkJGTW5HN2NxSUtGb2pRQXJpQ3NNRlEyZlJBZDliSG5xZTRiemItWjNNbXdxaDN2NnR4TWh6bQ==
+[15-01-2015 12:35:04] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[15-01-2015 12:35:04] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[15-01-2015 12:35:10] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[15-01-2015 12:35:13] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015kf0ClBThRDLb7wSYQZWuMO0ImoNebbF6A3Sa4PScU1s","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+
+
+[15-01-2015 12:35:13] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[15-01-2015 12:35:13] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[15-01-2015 12:35:13] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 12:35:13] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A015kf0ClBThRDLb7wSYQZWuMO0ImoNebbF6A3Sa4PScU1s
+[15-01-2015 12:35:13] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: ITOBUZ05-PC341614213253049032
+[15-01-2015 12:35:13] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54b7b3f8d65be"}]}
+
+[15-01-2015 12:35:15] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[15-01-2015 12:35:24] PayPal\Core\PPHttpConnection: FINE: Response : {"name":"UNKNOWN_ERROR","message":"An unknown error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#UNKNOWN_ERROR","debug_id":"9dfb656c5806c"}
+
+
+[15-01-2015 12:51:42] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/v1/oauth2/token
+[15-01-2015 12:51:42] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 12:51:42] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QVZHdTlCQ0RvTlAxaUhuUkRkaWtJQVRuZm1CZzFQMkdRTmZ2VzFYN25tQlE4OG82VFNMMmd3SjJaTHVSOkVHRVlpQkJGTW5HN2NxSUtGb2pRQXJpQ3NNRlEyZlJBZDliSG5xZTRiemItWjNNbXdxaDN2NnR4TWh6bQ==
+[15-01-2015 12:51:42] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[15-01-2015 12:51:42] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[15-01-2015 12:51:43] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[15-01-2015 12:51:46] PayPal\Core\PPHttpConnection: FINE: Response : {"error":"invalid_client","error_description":"The client credentials are invalid"}
+
+
+[15-01-2015 01:04:53] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/v1/oauth2/token
+[15-01-2015 01:04:53] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 01:04:53] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QWNnWE14RHB6SklkLWY5YWVLaW9tRkdHUTVKZUd5bGFya0JCMF82OXZQSjBzRFJPSzU2ZHdBc25VQjNaOkVEc3hreEJPT1FqX3NCOS1HS09KaTZWQlR6NmIxVExmTUJ4aXdaSHlwYURWWTFWZ1JzOS1UV25GaG1KNw==
+[15-01-2015 01:04:53] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[15-01-2015 01:04:53] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[15-01-2015 01:04:57] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[15-01-2015 01:05:01] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/payments/futurepayments openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://api.paypal.com/v1/payments/.*","access_token":"A015ThJDbaEg5TaoDQJ34nIqfQBAlK7fSPo52YMNwZn0o7w","token_type":"Bearer","app_id":"APP-6ND47279MA7643604","expires_in":900}
+
+
+[15-01-2015 01:05:01] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/v1/payments/payment
+[15-01-2015 01:05:01] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[15-01-2015 01:05:01] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 01:05:01] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A015ThJDbaEg5TaoDQJ34nIqfQBAlK7fSPo52YMNwZn0o7w
+[15-01-2015 01:05:01] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: ITOBUZ05-PC3416142132709335865
+[15-01-2015 01:05:01] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54b7baf5c9027"}]}
+
+[15-01-2015 01:05:02] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[15-01-2015 01:05:04] PayPal\Core\PPHttpConnection: FINE: Response : {"name":"UNAUTHORIZED_PAYMENT","message":"Unauthorized payment","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#UNAUTHORIZED_PAYMENT","debug_id":"6ee52e622d10b"}
+
+
+[15-01-2015 01:05:57] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/v1/oauth2/token
+[15-01-2015 01:05:57] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 01:05:57] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QWNnWE14RHB6SklkLWY5YWVLaW9tRkdHUTVKZUd5bGFya0JCMF82OXZQSjBzRFJPSzU2ZHdBc25VQjNaOkVEc3hreEJPT1FqX3NCOS1HS09KaTZWQlR6NmIxVExmTUJ4aXdaSHlwYURWWTFWZ1JzOS1UV25GaG1KNw==
+[15-01-2015 01:05:57] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[15-01-2015 01:05:57] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[15-01-2015 01:05:58] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[15-01-2015 01:06:00] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/payments/futurepayments openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://api.paypal.com/v1/payments/.*","access_token":"A015g7EhwNoSyQKDVXSRc.byo9uFs4UA6PBRCjMC7.0EoVg","token_type":"Bearer","app_id":"APP-6ND47279MA7643604","expires_in":900}
+
+
+[15-01-2015 01:06:00] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/v1/payments/payment
+[15-01-2015 01:06:00] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[15-01-2015 01:06:00] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 01:06:00] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A015g7EhwNoSyQKDVXSRc.byo9uFs4UA6PBRCjMC7.0EoVg
+[15-01-2015 01:06:00] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: ITOBUZ05-PC3416142132715713292
+[15-01-2015 01:06:00] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54b7bb35a8b2c"}]}
+
+[15-01-2015 01:06:02] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[15-01-2015 01:06:04] PayPal\Core\PPHttpConnection: FINE: Response : {"name":"UNAUTHORIZED_PAYMENT","message":"Unauthorized payment","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#UNAUTHORIZED_PAYMENT","debug_id":"f0595131c5055"}
+
+
+[15-01-2015 01:13:35] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/v1/oauth2/token
+[15-01-2015 01:13:35] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 01:13:35] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QWNnWE14RHB6SklkLWY5YWVLaW9tRkdHUTVKZUd5bGFya0JCMF82OXZQSjBzRFJPSzU2ZHdBc25VQjNaOkVEc3hreEJPT1FqX3NCOS1HS09KaTZWQlR6NmIxVExmTUJ4aXdaSHlwYURWWTFWZ1JzOS1UV25GaG1KNw==
+[15-01-2015 01:13:35] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[15-01-2015 01:13:35] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[15-01-2015 01:13:36] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[15-01-2015 01:13:38] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/payments/futurepayments openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://api.paypal.com/v1/payments/.*","access_token":"A015yLEB0Q0Ahx7RetOlZDKBUNniqjoc9HDNfmeAehR4l1o","token_type":"Bearer","app_id":"APP-6ND47279MA7643604","expires_in":900}
+
+
+[15-01-2015 01:13:38] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/v1/payments/payment
+[15-01-2015 01:13:38] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[15-01-2015 01:13:38] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 01:13:38] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A015yLEB0Q0Ahx7RetOlZDKBUNniqjoc9HDNfmeAehR4l1o
+[15-01-2015 01:13:38] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: ITOBUZ05-PC341614213276143924
+[15-01-2015 01:13:38] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54b7bcff2a07b"}]}
+
+[15-01-2015 01:13:39] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[15-01-2015 01:13:41] PayPal\Core\PPHttpConnection: FINE: Response : {"name":"UNAUTHORIZED_PAYMENT","message":"Unauthorized payment","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#UNAUTHORIZED_PAYMENT","debug_id":"e736605d51c67"}
+
+
+[15-01-2015 01:24:48] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/nvp/v1/oauth2/token
+[15-01-2015 01:24:48] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 01:24:48] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QWNnWE14RHB6SklkLWY5YWVLaW9tRkdHUTVKZUd5bGFya0JCMF82OXZQSjBzRFJPSzU2ZHdBc25VQjNaOkVEc3hreEJPT1FqX3NCOS1HS09KaTZWQlR6NmIxVExmTUJ4aXdaSHlwYURWWTFWZ1JzOS1UV25GaG1KNw==
+[15-01-2015 01:24:48] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[15-01-2015 01:24:48] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[15-01-2015 01:24:49] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[15-01-2015 01:26:25] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/nvp/v1/oauth2/token
+[15-01-2015 01:26:25] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[15-01-2015 01:26:25] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QWNnWE14RHB6SklkLWY5YWVLaW9tRkdHUTVKZUd5bGFya0JCMF82OXZQSjBzRFJPSzU2ZHdBc25VQjNaOkVEc3hreEJPT1FqX3NCOS1HS09KaTZWQlR6NmIxVExmTUJ4aXdaSHlwYURWWTFWZ1JzOS1UV25GaG1KNw==
+[15-01-2015 01:26:25] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[15-01-2015 01:26:25] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[15-01-2015 01:26:26] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[16-01-2015 10:16:28] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/v1/oauth2/token
+[16-01-2015 10:16:28] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[16-01-2015 10:16:28] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QWNnWE14RHB6SklkLWY5YWVLaW9tRkdHUTVKZUd5bGFya0JCMF82OXZQSjBzRFJPSzU2ZHdBc25VQjNaOkVEc3hreEJPT1FqX3NCOS1HS09KaTZWQlR6NmIxVExmTUJ4aXdaSHlwYURWWTFWZ1JzOS1UV25GaG1KNw==
+[16-01-2015 10:16:28] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[16-01-2015 10:16:28] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[16-01-2015 10:16:33] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[16-01-2015 10:16:38] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/payments/futurepayments openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://api.paypal.com/v1/payments/.*","access_token":"A0154Khd72z2Hs5G6nlAHgWKuBB2viNlKhHr1WjG8vN7CvM","token_type":"Bearer","app_id":"APP-6ND47279MA7643604","expires_in":900}
+
+
+[16-01-2015 10:16:38] PayPal\Core\PPHttpConnection: INFO: POST https://api.paypal.com/v1/payments/payment
+[16-01-2015 10:16:38] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[16-01-2015 10:16:38] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[16-01-2015 10:16:38] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A0154Khd72z2Hs5G6nlAHgWKuBB2viNlKhHr1WjG8vN7CvM
+[16-01-2015 10:16:38] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: ITOBUZ05-PC4588142140338859193
+[16-01-2015 10:16:38] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54b8e4fcbcb0d"}]}
+
+[16-01-2015 10:16:42] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[16-01-2015 10:19:38] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[16-01-2015 10:19:38] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[16-01-2015 10:19:38] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QVZHdTlCQ0RvTlAxaUhuUkRkaWtJQVRuZm1CZzFQMkdRTmZ2VzFYN25tQlE4OG82VFNMMmd3SjJaTHVSOkVHRVlpQkJGTW5HN2NxSUtGb2pRQXJpQ3NNRlEyZlJBZDliSG5xZTRiemItWjNNbXdxaDN2NnR4TWh6bQ==
+[16-01-2015 10:19:38] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[16-01-2015 10:19:38] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[16-01-2015 10:19:46] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[16-01-2015 10:19:50] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015Sl0FJ2YfDg4WUcfc1BRpsVgk7TFBMWC-6JxTs391STo","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+
+
+[16-01-2015 10:19:50] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[16-01-2015 10:19:50] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[16-01-2015 10:19:50] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[16-01-2015 10:19:50] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A015Sl0FJ2YfDg4WUcfc1BRpsVgk7TFBMWC-6JxTs391STo
+[16-01-2015 10:19:50] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: ITOBUZ05-PC4588142140357844187
+[16-01-2015 10:19:50] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54b8e5bab0b1d"}]}
+
+[16-01-2015 10:19:53] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[16-01-2015 10:20:01] PayPal\Core\PPHttpConnection: FINE: Response : {"name":"UNKNOWN_ERROR","message":"An unknown error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#UNKNOWN_ERROR","debug_id":"3a83bf2d5ae70"}
+
+
+[17-01-2015 07:23:07] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[17-01-2015 07:23:07] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 07:23:07] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QVZHdTlCQ0RvTlAxaUhuUkRkaWtJQVRuZm1CZzFQMkdRTmZ2VzFYN25tQlE4OG82VFNMMmd3SjJaTHVSOkVHRVlpQkJGTW5HN2NxSUtGb2pRQXJpQ3NNRlEyZlJBZDliSG5xZTRiemItWjNNbXdxaDN2NnR4TWh6bQ==
+[17-01-2015 07:23:07] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[17-01-2015 07:23:07] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[17-01-2015 07:23:13] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[17-01-2015 07:23:23] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015y8WXK-3QE.oCBnu5ZKbAwDYsEylKvM0DyDgarNXfFYk","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+
+
+[17-01-2015 07:23:23] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[17-01-2015 07:23:23] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[17-01-2015 07:23:23] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 07:23:23] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A015y8WXK-3QE.oCBnu5ZKbAwDYsEylKvM0DyDgarNXfFYk
+[17-01-2015 07:23:23] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: ITOBUZ05-PC1792142147938731708
+[17-01-2015 07:23:23] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54ba0ddb5ad3c"}]}
+
+[17-01-2015 07:25:22] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[17-01-2015 07:25:22] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 07:25:22] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QVZHdTlCQ0RvTlAxaUhuUkRkaWtJQVRuZm1CZzFQMkdRTmZ2VzFYN25tQlE4OG82VFNMMmd3SjJaTHVSOkVHRVlpQkJGTW5HN2NxSUtGb2pRQXJpQ3NNRlEyZlJBZDliSG5xZTRiemItWjNNbXdxaDN2NnR4TWh6bQ==
+[17-01-2015 07:25:22] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[17-01-2015 07:25:22] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[17-01-2015 07:25:28] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[17-01-2015 07:25:34] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015Mcr5INYp26l0IvF9x1Y0V1Ks9b2bqlVSDa5eSmFa5cE","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+
+
+[17-01-2015 07:25:34] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[17-01-2015 07:25:34] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[17-01-2015 07:25:34] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 07:25:34] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A015Mcr5INYp26l0IvF9x1Y0V1Ks9b2bqlVSDa5eSmFa5cE
+[17-01-2015 07:25:34] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: ITOBUZ05-PC1792142147952251998
+[17-01-2015 07:25:34] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54ba0e6277534"}]}
+
+[17-01-2015 07:30:36] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[17-01-2015 07:30:36] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 07:30:36] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QVZHdTlCQ0RvTlAxaUhuUkRkaWtJQVRuZm1CZzFQMkdRTmZ2VzFYN25tQlE4OG82VFNMMmd3SjJaTHVSOkVHRVlpQkJGTW5HN2NxSUtGb2pRQXJpQ3NNRlEyZlJBZDliSG5xZTRiemItWjNNbXdxaDN2NnR4TWh6bQ==
+[17-01-2015 07:30:36] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[17-01-2015 07:30:36] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[17-01-2015 07:30:42] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[17-01-2015 07:30:48] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015bufyhcySa.Xs9a62LVopnbSZe.TQf-s7DDfruWQaygI","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+
+
+[17-01-2015 07:30:48] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[17-01-2015 07:30:48] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[17-01-2015 07:30:48] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 07:30:48] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A015bufyhcySa.Xs9a62LVopnbSZe.TQf-s7DDfruWQaygI
+[17-01-2015 07:30:48] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: ITOBUZ05-PC1792142147983639266
+[17-01-2015 07:30:48] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54ba0f9c3df07"}]}
+
+[17-01-2015 07:32:23] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[17-01-2015 07:32:23] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 07:32:23] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QVZHdTlCQ0RvTlAxaUhuUkRkaWtJQVRuZm1CZzFQMkdRTmZ2VzFYN25tQlE4OG82VFNMMmd3SjJaTHVSOkVHRVlpQkJGTW5HN2NxSUtGb2pRQXJpQ3NNRlEyZlJBZDliSG5xZTRiemItWjNNbXdxaDN2NnR4TWh6bQ==
+[17-01-2015 07:32:23] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[17-01-2015 07:32:23] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[17-01-2015 07:32:32] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[17-01-2015 07:36:15] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[17-01-2015 07:36:15] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 07:36:15] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QVZHdTlCQ0RvTlAxaUhuUkRkaWtJQVRuZm1CZzFQMkdRTmZ2VzFYN25tQlE4OG82VFNMMmd3SjJaTHVSOkVHRVlpQkJGTW5HN2NxSUtGb2pRQXJpQ3NNRlEyZlJBZDliSG5xZTRiemItWjNNbXdxaDN2NnR4TWh6bQ==
+[17-01-2015 07:36:15] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[17-01-2015 07:36:15] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[17-01-2015 07:36:18] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[17-01-2015 07:36:23] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015.aUSXE0L8eW2S7bFSbE9C1yYAoiA5GJEC52fS-atCbA","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+
+
+[17-01-2015 07:36:23] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[17-01-2015 07:36:23] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[17-01-2015 07:36:23] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 07:36:23] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A015.aUSXE0L8eW2S7bFSbE9C1yYAoiA5GJEC52fS-atCbA
+[17-01-2015 07:36:23] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: ITOBUZ05-PC764142148017533077
+[17-01-2015 07:36:23] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54ba10ef9f353"}]}
+
+[17-01-2015 07:36:25] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[17-01-2015 07:36:32] PayPal\Core\PPHttpConnection: FINE: Response : {"name":"UNKNOWN_ERROR","message":"An unknown error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#UNKNOWN_ERROR","debug_id":"762f39be74025"}
+
+
+[17-01-2015 06:46:19] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[17-01-2015 06:46:19] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.6;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 06:46:19] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QVZHdTlCQ0RvTlAxaUhuUkRkaWtJQVRuZm1CZzFQMkdRTmZ2VzFYN25tQlE4OG82VFNMMmd3SjJaTHVSOkVHRVlpQkJGTW5HN2NxSUtGb2pRQXJpQ3NNRlEyZlJBZDliSG5xZTRiemItWjNNbXdxaDN2NnR4TWh6bQ==
+[17-01-2015 06:46:19] PayPal\Core\PPHttpConnection: FINE: Accept: */*
+[17-01-2015 06:46:19] PayPal\Core\PPHttpConnection: FINE: Payload : grant_type=client_credentials
+
+[17-01-2015 06:46:23] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[17-01-2015 06:46:26] PayPal\Core\PPHttpConnection: FINE: Response : {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015R9IxC8XJGMroNfB2bAuwIRoChLkESLfXL2PhMfLqLjM","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+
+
+[17-01-2015 06:46:26] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[17-01-2015 06:46:26] PayPal\Core\PPHttpConnection: FINE: Content-Type: application/json
+[17-01-2015 06:46:26] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.6;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
+[17-01-2015 06:46:26] PayPal\Core\PPHttpConnection: FINE: Authorization: Bearer A015R9IxC8XJGMroNfB2bAuwIRoChLkESLfXL2PhMfLqLjM
+[17-01-2015 06:46:26] PayPal\Core\PPHttpConnection: FINE: PayPal-Request-Id: SHAMIM-PC5416142152037852990
+[17-01-2015 06:46:26] PayPal\Core\PPHttpConnection: FINE: Payload : {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4758411877817150","expire_month":"05","expire_year":"2019","cvv2":"456","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20.00","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2.00"}]},"description":"Payment description","invoice_number":"54baadfb90606"}]}
+
+[17-01-2015 06:46:27] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[17-01-2015 06:46:30] PayPal\Core\PPHttpConnection: FINE: Response : {"name":"UNKNOWN_ERROR","message":"An unknown error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#UNKNOWN_ERROR","debug_id":"1ce1862805d54"}
+
+
