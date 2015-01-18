@@ -3,8 +3,8 @@
 class PaypalPaymentController extends BaseController {
 
     private $_apiContext;
-    private $_ClientId = 'AVGu9BCDoNP1iHnRDdikIATnfmBg1P2GQNfvW1X7nmBQ88o6TSL2gwJ2ZLuR';
-    private $_ClientSecret = 'EGEYiBBFMnG7cqIKFojQAriCsMFQ2fRAd9bHnqe4bzb-Z3Mmwqh3v6txMhzm';
+    private $_ClientId = 'AUfaGxCkYHgDvFOdpNqy3jkDghxrdKVMrE1fNPUi1a2XqfDIe--AJ_Ljlu5O';
+    private $_ClientSecret = 'ENzroxBLsWy58D_9_dAtEm-Z8e7gzKndVtQQQRzC63RZT5vAmYarLOf-A0dc';
 
     public function __construct() {
 

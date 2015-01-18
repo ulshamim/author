@@ -67,5 +67,10 @@ return array(
         'path' => 'admin/mailinglists',
         'hide' => false
     ),
+	   array(
+        'name' => 'pages',
+        'path' => 'admin/pages',
+        'hide' => false
+    ),
 
 );
