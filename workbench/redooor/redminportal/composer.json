@@ -1,0 +1,44 @@
+{
+    "name": "redooor/redminportal",
+    "description": "RedminPortal is a backend administrating tool for Content Management and Ecommerce sites.",
+    "keywords": ["package", "laravel", "redooor", "redmin", "portal", "ecommerce", "backend"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Redooor LLP",
+            "email": "support@redooor.com",
+            "homepage": "http://www.redooor.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "cartalyst/sentry": "2.1.*",
+        "doctrine/dbal": "~2.3",
+        "imagine/imagine": "0.5.*",
+        "maatwebsite/excel": "1.*"
+    },
+    "require-dev": {
+        "twbs/bootstrap": "3.1.*",
+		"phpunit/phpunit": "4.0.*",
+		"mockery/mockery": "0.9.*",
+        "orchestra/testbench": "~2.2.0@dev"
+	},
+    "autoload": {
+        "classmap": [
+            "src/controllers",
+            "src/migrations",
+            "src/models",
+            "src/helpers",
+            "src/config",
+            "src/seeds",
+            "src/lang",
+            "tests/bases",
+            "tests/RedminTestCase.php"
+        ],
+        "psr-0": {
+            "Redooor\\Redminportal": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable" : true
+}
