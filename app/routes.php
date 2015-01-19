@@ -16,10 +16,9 @@ Route::get('/', array('uses' => 'StoreController@home'));
 Route::get('users/login', array('uses' => 'LoginController@getIndex'));
 Route::get('logout', 'LoginController@getLogout');
 Route::controller('store', 'StoreController');
-Route::group(array('prefix' => 'admin', 'before' => 'auth.sentry'), function()
-{
-Route::controller('pages', 'PageController');
+Route::group(array('prefix' => 'admin', 'before' => 'auth.sentry'), function() {
+    Route::controller('pages', 'PageController');
 });
-Route::controller('users','UserController');
+Route::controller('users', 'UserController');
 Route::controller('login', 'LoginController');
 Route::resource('payment', 'PaypalPaymentController');

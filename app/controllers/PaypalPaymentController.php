@@ -3,10 +3,8 @@
 class PaypalPaymentController extends BaseController {
 
     private $_apiContext;
-
     private $_ClientId = 'AXl5thBflA3BbzzUWpjPEoPpTJ74ua1L1rMmjaA1ILbKD-3p8n_BnhjGJGIq';
     private $_ClientSecret = 'EFC7MBCEATb_PAlQVaol_HZNFSxOSRshY7ryPnsayJuuvX5EGptHVz4W7m-Y';
-
 
     public function __construct() {
 
@@ -24,9 +22,7 @@ class PaypalPaymentController extends BaseController {
         $this->_apiContext->setConfig(array(
             'mode' => 'sandbox',
             'service.EndPoint' => 'https://api.sandbox.paypal.com',
-
             'http.ConnectionTimeOut' => 30,
-
             'log.LogEnabled' => true,
             'log.FileName' => __DIR__ . '/../PayPal.log',
             'log.LogLevel' => 'FINE'
@@ -38,7 +34,7 @@ class PaypalPaymentController extends BaseController {
      */
 
     public function create() {
-        return View::make('payment.order');
+        return View::make('payment.create');
     }
 
     /*
@@ -151,8 +147,9 @@ class PaypalPaymentController extends BaseController {
             return "Exception: " . $ex->getMessage() . PHP_EOL;
             exit(1);
         }
-
+        echo '<pre>';
         dd($payment);
+        echo '</pre>';
     }
 
 }
