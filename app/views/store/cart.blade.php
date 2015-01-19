@@ -25,25 +25,25 @@
                 <dl>
                     <dt>Product ID</dt>
                     <dd>{{$cartitem['id']}}</dd>
-                    <dt>Product Price</dt>
-                    <dd>{{$cartitem['price']}}</dd>
-                    <dt>Quantity:</dt> 
+                    <dt>Quantity:</dt>
                     <dd>{{$cartitem['quantity']}}</dd>
                 </dl>
 
             </td>
-            <td align="right" valign="top" class="price">&pound;{{$cartitem['price']*$cartitem['quantity']}}</td>
+            <td align="right" valign="top" class="price">&pound;{{$cartitem['price']}}</td>
         </tr>
         @endforeach
 
     </table>
-    {{ HTML::image("images/creditcards.gif", "Logo",array('class' => 'safe', 'alt' =>'card')) }}
-
+   {{ HTML::image("images/creditcards.gif", "Logo",array('class' => 'safe', 'alt' =>'card')) }}
+    
     <div class="right">
 
         <strong>Your total</strong> <em>&pound;{{Cart::total()}}</em>
     </div>
-    {{HTMl::link('store/checkout', 'Checkout', array('class'=>'continue'))}}
-
+   {{Form::open(array('action'=>'PaypalPaymentController@store'))}}
+   <input type="submit" class="continue" value="Pay securely now" />
+   <!--<button class="continue">Pay securely now</button>-->
+    {{Form::close()}}
 </article>
 @stop
