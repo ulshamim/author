@@ -1,7 +1,6 @@
 <?php
 
 return array(
-
     array(
         'name' => 'users',
         'path' => 'admin/users',
@@ -67,10 +66,9 @@ return array(
         'path' => 'admin/mailinglists',
         'hide' => false
     ),
-	   array(
+    array(
         'name' => 'pages',
         'path' => 'admin/pages',
         'hide' => false
     ),
-
 );
