@@ -18,5 +18,5 @@ return array(
     'purchases' => 'Purchases',
     'discounts' => 'Discounts',
     'mailinglist' => 'Mailing List',
-	'pages' => 'Pages',
+    'pages' => 'Pages',
 );

@@ -224,6 +224,7 @@
 [17-01-2015 07:36:32] PayPal\Core\PPHttpConnection: FINE: Response : {"name":"UNKNOWN_ERROR","message":"An unknown error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#UNKNOWN_ERROR","debug_id":"762f39be74025"}
 
 
+<<<<<<< HEAD
 [17-01-2015 06:46:19] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
 [17-01-2015 06:46:19] PayPal\Core\PPHttpConnection: FINE: User-Agent: PayPalSDK/PayPal-PHP-SDK 0.15.1 (lang=PHP;v=5.5.6;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.1e;curl=7.30.0)
 [17-01-2015 06:46:19] PayPal\Core\PPHttpConnection: FINE: Authorization: Basic QVZHdTlCQ0RvTlAxaUhuUkRkaWtJQVRuZm1CZzFQMkdRTmZ2VzFYN25tQlE4OG82VFNMMmd3SjJaTHVSOkVHRVlpQkJGTW5HN2NxSUtGb2pRQXJpQ3NNRlEyZlJBZDliSG5xZTRiemItWjNNbXdxaDN2NnR4TWh6bQ==
@@ -329,3 +330,5 @@
 [18-01-2015 07:28:31] PayPal\Core\PPHttpConnection: FINE: Response : {"name":"UNKNOWN_ERROR","message":"An unknown error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#UNKNOWN_ERROR","debug_id":"4e75a40c95e9b"}
 
 
+=======
+>>>>>>> Merge files
