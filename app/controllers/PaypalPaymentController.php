@@ -3,8 +3,8 @@
 class PaypalPaymentController extends BaseController {
 
     private $_apiContext;
-    private $_ClientId = 'AUfaGxCkYHgDvFOdpNqy3jkDghxrdKVMrE1fNPUi1a2XqfDIe--AJ_Ljlu5O';
-    private $_ClientSecret = 'ENzroxBLsWy58D_9_dAtEm-Z8e7gzKndVtQQQRzC63RZT5vAmYarLOf-A0dc';
+    private $_ClientId = 'AXl5thBflA3BbzzUWpjPEoPpTJ74ua1L1rMmjaA1ILbKD-3p8n_BnhjGJGIq';
+    private $_ClientSecret = 'EFC7MBCEATb_PAlQVaol_HZNFSxOSRshY7ryPnsayJuuvX5EGptHVz4W7m-Y';
 
     public function __construct() {
 
@@ -22,7 +22,7 @@ class PaypalPaymentController extends BaseController {
         $this->_apiContext->setConfig(array(
             'mode' => 'sandbox',
             'service.EndPoint' => 'https://api.sandbox.paypal.com',
-            'http.ConnectionTimeOut' => 3000,
+            'http.ConnectionTimeOut' => 30,
             'log.LogEnabled' => true,
             'log.FileName' => __DIR__ . '/../PayPal.log',
             'log.LogLevel' => 'FINE'

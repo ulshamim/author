@@ -33,8 +33,7 @@ class StoreController extends BaseController {
     }
 
     public function postAddToCart() {
-//         $ordervalues=Input::all();
-//         print_r($ordervalues);
+
         $items = array(
             'id' => Input::get('id'),
             'name' => Input::get('name'),
