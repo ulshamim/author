@@ -38,7 +38,7 @@ class PaypalPaymentController extends BaseController {
      */
 
     public function create() {
-        return View::make('payment.order');
+        return View::make('payment.create');
     }
 
     /*

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 use Redooor\Redminportal\Product;
 
@@ -6,10 +6,8 @@ class StoreController extends BaseController {
 
     protected $model;
 
-
     public function __construct(Product $product) {
         $this->model = $product;
-       
     }
 
     public function home() {
@@ -39,7 +37,7 @@ class StoreController extends BaseController {
             'name' => Input::get('name'),
             'price' => Input::get('price'),
             'quantity' => 1,
-            'imgpath'=>Input::get('image')
+            'imgpath' => Input::get('image')
         );
         Cart::insert($items);
         $product = Product::find(Input::get('id'));
@@ -49,8 +47,13 @@ class StoreController extends BaseController {
 
     public function getCart() {
         $cartItems = Cart::contents(true);
-        
+
         return View::make('store.cart')->with('cartitems', $cartItems)->with('imageUrl', 'assets/img/products/');
+    }
+
+    public function getCheckout() {
+        $cartItems = Cart::contents(true);
+        return View::make('store.checkout')->with('cartitems', $cartItems);
     }
 
 }
