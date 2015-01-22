@@ -330,6 +330,7 @@
 [18-01-2015 07:28:31] PayPal\Core\PPHttpConnection: FINE: Response : {"name":"UNKNOWN_ERROR","message":"An unknown error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#UNKNOWN_ERROR","debug_id":"4e75a40c95e9b"}
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> Merge files
 [19-01-2015 10:42:44] PayPal\Core\PPHttpConnection: INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
@@ -393,5 +394,4 @@
 
 [19-01-2015 12:04:23] PayPal\Core\PPHttpConnection: INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
 [19-01-2015 12:04:26] PayPal\Core\PPHttpConnection: FINE: Response : {"id":"PAY-91624912R7379263TKS6PFRY","create_time":"2015-01-19T12:04:23Z","update_time":"2015-01-19T12:04:25Z","state":"approved","intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"xxxxxxxxxxxx7150","expire_month":"5","expire_year":"2019","first_name":"Joe","last_name":"Shopper"}}]},"transactions":[{"amount":{"total":"20.00","currency":"USD","details":{"subtotal":"17.50","tax":"1.30","shipping":"1.20"}},"description":"Payment description","invoice_number":"54bcf2c367ab2","item_list":{"items":[{"name":"Ground Coffee 40 oz","price":"7.50","currency":"USD","quantity":"1","description":"Ground Coffee 40 oz","tax":"0.30"},{"name":"Granola bars","price":"2.00","currency":"USD","quantity":"5","description":"Granola Bars with Peanuts","tax":"0.20"}]},"related_resources":[{"sale":{"id":"9EA70815FW977244E","create_time":"2015-01-19T12:04:23Z","update_time":"2015-01-19T12:04:25Z","amount":{"total":"20.00","currency":"USD"},"state":"completed","parent_payment":"PAY-91624912R7379263TKS6PFRY","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/9EA70815FW977244E","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/9EA70815FW977244E/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-91624912R7379263TKS6PFRY","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-91624912R7379263TKS6PFRY","rel":"self","method":"GET"}]}
-
 
