@@ -23,3 +23,4 @@ Route::controller('pages', 'PageController');
 Route::controller('users','UserController');
 Route::controller('login', 'LoginController');
 Route::resource('payment', 'PaypalPaymentController');
+ 
